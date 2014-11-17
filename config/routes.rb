@@ -1,5 +1,8 @@
 Nr3::Application.routes.draw do
-  resources :schedules, only: [:index, :create, :update]
+  resources :assignments, only: [:index, :create, :update]
+
+  #get 'schedules', :to => 'schedules#index'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

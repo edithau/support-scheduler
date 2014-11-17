@@ -3,8 +3,6 @@ class CreateHeros < ActiveRecord::Migration
     create_table :heros do |t|
       t.string :name
       t.date :undoable_date
-
-      t.timestamps
     end
   end
 

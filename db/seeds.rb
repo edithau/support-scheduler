@@ -20,8 +20,9 @@ names2 = ["Sherry", "Boris", "Vicente", "Matte", "Jack", "Sherry",
           "Sherry", "Jack", "Sherry", "Jack"]
 
 
-Hero.delete_all
-Schedule.delete_all
+Assignment.destroy_all
+Hero.destroy_all
+
 start_date = Date.today
 
 names.each do |name|
@@ -29,12 +30,12 @@ names.each do |name|
   while (start_date.wday == 6 || start_date.wday == 0 || Holidays.on(start_date, :us_cali).any? ) do
     start_date = start_date + 1
   end
-  schedule = Schedule.create(hero: hero, sdate: start_date)
+  schedule = Assignment.create(hero: hero, sdate: start_date)
   start_date = start_date + 1
 end
 
 
-Schedule.all.each do |schedule|
+Assignment.all.each do |schedule|
   puts schedule.hero.name
   puts schedule.sdate
 end

@@ -13,28 +13,20 @@
 
 ActiveRecord::Schema.define(:version => 20141111171654) do
 
+  create_table "assignments", :force => true do |t|
+    t.integer "hero_id"
+    t.date    "sdate"
+  end
+
   create_table "heros", :force => true do |t|
-    t.string   "name"
-    t.date     "undoable_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "name"
+    t.date   "undoable_date"
   end
 
   create_table "schedulers", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "schedules", :force => true do |t|
-    t.integer  "hero_id"
-    t.date     "sdate"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "support_calendars", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
 end
