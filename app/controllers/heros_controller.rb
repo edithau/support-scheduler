@@ -44,10 +44,14 @@ class HerosController < ApplicationController
       # XXX id missing -- caused error when generate response (undefined method hero_url)
       # XXX names should be unique but not
       result = Hero.create(name: params[:name])
-      generate_response(result, 201)
+      generate_response(result, {}, 201)
     rescue ArgumentError => e
       generate_exception_response(e.message, 422)
     end
+  end
+
+  def hero_url(param)
+    s = 'huh?'
   end
 
 end
