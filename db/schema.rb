@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141111171654) do
+ActiveRecord::Schema.define(:version => 20141118213409) do
 
   create_table "assignments", :force => true do |t|
     t.integer "hero_id"
@@ -23,10 +23,9 @@ ActiveRecord::Schema.define(:version => 20141111171654) do
     t.date   "undoable_date"
   end
 
-  create_table "schedulers", :force => true do |t|
-  end
-
   create_table "support_calendars", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

@@ -24,8 +24,7 @@ Assignment.destroy_all
 Hero.destroy_all
 
 names.each do |name|
-  hero = Hero.create(name: name)
-  Assignment.createAssignment(hero.id)
+  Assignment.createAssignment(name)
 end
 
 

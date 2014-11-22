@@ -1,9 +1,19 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  hero: 
-  sdate: 2014-11-11
+assignment1:
+  hero_id: 1
+  sdate: 2014-11-20
 
-two:
-  hero: 
-  sdate: 2014-11-11
+assignment2:
+  hero_id: 2
+  sdate: 2014-11-21
+
+earliest_assignment:
+  hero_id: 1
+  sdate: 2014-11-10
+
+dup_assignment:
+  hero_id: 1
+  sdate: 2014-11-10
+
+

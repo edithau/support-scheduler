@@ -9,6 +9,10 @@ gem 'sqlite3'
 
 gem 'holidays', :github=>'edithau/holidays'
 
+gem 'clockwork'
+
+gem 'daemons'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

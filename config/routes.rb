@@ -1,8 +1,15 @@
 Nr3::Application.routes.draw do
   resources :assignments, only: [:index, :create, :update]
+  resources :heros, only: [:index, :create]
 
-  #get 'schedules', :to => 'schedules#index'
+  #match 'assignments/:id' => 'assignments#view'
+  #match 'heros/:id' => 'heros#view'
 
+  get 'assignments/:id', :to => 'assignments#view'
+  post 'assignments/:id', :to => 'assignments#update'
+
+  get 'heros/:id', :to => 'heros#view'
+  get 'heros/:id/assignments', :to => 'heros#assignments', :as => 'assignment'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

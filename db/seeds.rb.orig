@@ -23,9 +23,15 @@ names2 = ["Sherry", "Boris", "Vicente", "Matte", "Jack", "Sherry",
 Assignment.destroy_all
 Hero.destroy_all
 
+start_date = Date.today
+
 names.each do |name|
   hero = Hero.create(name: name)
-  Assignment.createAssignment(hero.id)
+  while (start_date.wday == 6 || start_date.wday == 0 || Holidays.on(start_date, :us_cali).any? ) do
+    start_date = start_date + 1
+  end
+  schedule = Assignment.create(hero: hero, sdate: start_date)
+  start_date = start_date + 1
 end
 
 

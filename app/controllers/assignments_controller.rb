@@ -1,46 +1,51 @@
+require 'json'
+
 class AssignmentsController < ApplicationController
 
-    # eg. curl http://localhost:3000/schedules?time=today
+    @@display_options = {:except =>[:hero_id], :include => {:hero => {:except => [:undoable_date]}}}
+
+    # eg. curl http://localhost:3000/assignments?time=today
+    # eg. curl http://localhost:3000/assignments?time=month
     def index
       begin
         if params[:time] == "today"
-          # display today's suport hero
-          result = Scheduler.get_todays_hero
+          # display today's support hero
+          result = Assignment.first
         elsif params[:time] == "month"
           # display full schedule for all heros in the current month
-          result = Scheduler.get_schedule_this_month
+          today = Date.today
+          last_day_of_the_month = Date.new(today.year, today.month, -1)
+          result = Assignment.where(sdate: today..last_day_of_the_month)
         else
-          # XXX how to show links to all schedules?
-          result = Scheduler.get_all_schedules
+          result = Assignment.all
         end
-        generate_response(result, 200)
+        generate_response(result, @@display_options, 200)
       rescue ArgumentError => e
         generate_exception_response(e.message, 422)
       end
 
     end
 
+    # eg. curl http://localhost:3000/assignments/1
+    def view
+      begin
+        result = Assignment.find(params[:id])
+        generate_response(result, @@display_options, 200)
+      rescue ActiveRecord::RecordNotFound => e
+        generate_exception_response(e.message, 404)
+      end
+    end
 
-    # eg. curl -X POST http://localhost:3000/schedules -d "name=mary"
+
+    # create a new assignment for the next available on-duty date
+    # eg. curl -X POST http://localhost:3000/assignments -d "hero_id=2"
     def create
       begin
-        schedule = Scheduler.createSchedule(params[:name])
-        generate_response(schedule, 200)
-      rescue ArgumentError => e
-        generate_exception_response(e.message, 422)
-      end
-    end
-
-    # eg. curl -X POST http://localhost:3000/schedules/Vincente -d "undoable_date=2014-11-10" -d "replace_with=Sherry"
-    # eg. curl -X POST http://localhost:3000/schedules/boris -d "swap_with=kevin" -d "date1=2014-11-04" -d "date2=2014-11-13"
-    def update
-      begin
-        if (params[:undoable_date])
-          schedule = Scheduler.mark_undoable(params[:name], params[:undoable_date], params[:replace_with] )
-        elsif (params[:swap_with])
-          schedule = Scheduler.swap(params[:name], params[:swap_with], params[:date1], params[:date2])
+        if (params[:hero_id])
+          assignment = Assignment.createAssignment(params[:hero_id])
+          generate_response(assignment, @@display_options, 201)
         else
-          raise ArgumentError.new("Please specify parameters for either a mark undoable or a swap schedule update")
+          raise ArgumentError.new("Invalid POST parameters.  Please provide hero_id to create an assignment.")
         end
       rescue ArgumentError => e
         generate_exception_response(e.message, 422)
@@ -48,21 +53,34 @@ class AssignmentsController < ApplicationController
     end
 
 
-    def generate_response(resp_body, code)
-      resp = {}
-      resp["code"] = code
-      resp["result"] = resp_body
+    # this method supports:
+    # 1. swap assignments between 2 heros
+    # eg. curl -X POST http://localhost:3000/assignments/19 -d "swap_assignment_id=16"
 
-      render :json => JSON.pretty_generate(resp), :status => code, content_type: 'application/json'
+    # 2. replace hero for an assignment -- the assignment date will be marked as undoable on the replaced hero record.
+    #               each hero can have upto 1 undoable
+    # eg. curl -X POST http://localhost:3000/assignments/17 -d "replacement_hero_id=3"
+    def update
+      begin
+        assignment = Assignment.find(params[:id])
+        if (params[:swap_assignment_id])
+          Assignment.swap(assignment.id, params[:swap_assignment_id].to_i)
+        elsif (params[:replacement_hero_id])
+          replacement_hero_id = params[:replacement_hero_id].to_i
+          if (assignment.hero_id == replacement_hero_id )
+            raise ArgumentError.new("Cannot replace one self")
+          else
+            assignment.replace_hero(replacement_hero_id)
+          end
+        else
+          raise ArgumentError.new("Invalid POST parameters.  To swap assignments, please provide swap_assignment_id. To replace assignment's hero, please provide replacement_hero_id.")
+        end
+        generate_response(assignment,@@display_options, 200)
+      rescue ActiveRecord::RecordNotFound, ArgumentError => e
+        generate_exception_response(e.message, 422)
+      rescue ActiveRecord::StatementInvalid=> e
+        generate_exception_response(e.message, 500)
+      end
     end
-
-
-    def generate_exception_response(msg, code)
-      resp = {}
-      resp["code"] = code
-      resp["message"] = msg
-      render :json => JSON.pretty_generate(resp), :status => code, content_type: 'application/json'
-    end
-
   end
 

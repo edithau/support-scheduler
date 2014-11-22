@@ -1,9 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  undoable_date: 2014-11-11
+Sherry:
+  name: Sherry
+  undoable_date: nil
 
-two:
-  name: MyString
-  undoable_date: 2014-11-11
+Vincente:
+  name: Vincente
+  undoable_date: nil
+
+

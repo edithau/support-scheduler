@@ -1,8 +1,10 @@
 require 'test_helper'
 
 class HeroTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
+  test "should have unique names" do
+    hero = heros(:Sherry)
+    dup_hero = Hero.create(name: 'Sherry')
+    assert hero.valid?
+    assert dup_hero.invalid?
   end
 end
