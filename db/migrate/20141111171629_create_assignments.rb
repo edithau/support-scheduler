@@ -2,7 +2,7 @@ class CreateAssignments < ActiveRecord::Migration
   def self.up
     create_table :assignments do |t|
       t.references :hero, index: true
-      t.date :sdate
+      t.date :date
     end
   end
 

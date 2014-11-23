@@ -5,35 +5,49 @@
     <ignored path="nr3.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416598020761" ignored="false" />
-    <file path="/routes.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416690370437" ignored="false" />
+    <file path="/routes.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416782016922" ignored="false" />
     <file path="/schedules_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416171999513" ignored="false" />
-    <file path="/Dummy.txt" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416687609034" ignored="false" />
+    <file path="/Dummy.txt" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416781989918" ignored="false" />
     <file path="/scheduler.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416244379514" ignored="false" />
     <file path="/schedule.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1415997620247" ignored="false" />
-    <file path="/hero.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416609986338" ignored="false" />
+    <file path="/hero.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783534688" ignored="false" />
     <file path="/seeds.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416449596923" ignored="false" />
     <file path="/fragment.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416510290245" ignored="false" />
-    <file path="/a.dummy" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416620757908" ignored="false" />
-    <file path="$PROJECT_DIR$/test/functional/assignments_controller_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416187373517" ignored="false" />
-    <file path="/temp.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416350328407" ignored="false" />
+    <file path="/a.dummy" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416784286718" ignored="false" />
+    <file path="/temp.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416706524155" ignored="false" />
     <file path="/20141111171629_create_schedules.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416187833155" ignored="false" />
-    <file path="/schema.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416187872297" ignored="false" />
-    <file path="/assignments_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416675137435" ignored="false" />
-    <file path="/assignment.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416674309890" ignored="false" />
+    <file path="/schema.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416706951878" ignored="false" />
+    <file path="/assignments_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783256679" ignored="false" />
+    <file path="/assignment.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783401562" ignored="false" />
     <file path="/20141111171629_create_assignments.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416243618854" ignored="false" />
-    <file path="/assignment_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416349636513" ignored="false" />
+    <file path="/assignment_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416784144279" ignored="false" />
     <file path="/heros.yml" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416349808299" ignored="false" />
     <file path="/assignments.yml" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416348788758" ignored="false" />
     <file path="/clock.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416598507595" ignored="false" />
     <file path="/support_calendar.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416347680188" ignored="false" />
     <file path="/support_calendars.yml" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416346808563" ignored="false" />
     <file path="/support_calendar_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416350415212" ignored="false" />
-    <file path="/heros_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416690208553" ignored="false" />
+    <file path="/heros_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416690899070" ignored="false" />
     <file path="/20141118213409_create_support_calendars.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416346467053" ignored="false" />
-    <file path="/hero_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416349977305" ignored="false" />
-    <file path="/application_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416689694903" ignored="false" />
-    <file path="$PROJECT_DIR$/log/development.log" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416620335492" ignored="false" />
-    <file path="/Ruby Console" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416688655756" ignored="false" />
+    <file path="/hero_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416707007108" ignored="false" />
+    <file path="/application_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783574951" ignored="false" />
+    <file path="$PROJECT_DIR$/log/development.log" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783975557" ignored="false" />
+    <file path="/Ruby Console" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416767071447" ignored="false" />
+    <file path="/20141111171615_create_heros.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416706994669" ignored="false" />
+    <file path="/heroes_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416784556316" ignored="false" />
+    <file path="/20141111171615_create_heroes.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416713734700" ignored="false" />
+    <file path="$PROJECT_DIR$/../testloc/app/controllers/heros_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416762212029" ignored="false" />
+    <file path="$PROJECT_DIR$/../testloc/app/controllers/application_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416768708202" ignored="false" />
+    <file path="$PROJECT_DIR$/../testloc/db/schema.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416768313676" ignored="false" />
+    <file path="$PROJECT_DIR$/../testloc/config/routes.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416778847882" ignored="false" />
+    <file path="$PROJECT_DIR$/../testloc/app/controllers/users_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416779316484" ignored="false" />
+    <file path="/users_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416779314963" ignored="false" />
+    <file path="$PROJECT_DIR$/../testloc/app/helpers/users_helper.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416768313676" ignored="false" />
+    <file path="/users_helper.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416762963336" ignored="false" />
+    <file path="$PROJECT_DIR$/../testloc/app/models/user.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416768313676" ignored="false" />
+    <file path="/user.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416764238298" ignored="false" />
+    <file path="$PROJECT_DIR$/../testloc/Gemfile" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416768313676" ignored="false" />
+    <file path="/a.sql" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783916674" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,46 +72,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="hero_test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/hero_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assignments_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/assignments_controller.rb">
+      <file leaf-file-name="heroes_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/heroes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="62" selection-start="1524" selection-end="1558" vertical-scroll-proportion="0.0">
+            <state line="66" column="21" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.65673757">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heros_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/heros_controller.rb">
+      <file leaf-file-name="heros.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/heros.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="1515" selection-end="1515" vertical-scroll-proportion="2.2818005">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hero.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/hero.rb">
+      <file leaf-file-name="assignments.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/assignments.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="4" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+            <state line="3" column="6" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <file leaf-file-name="20141111171629_create_assignments.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20141111171629_create_assignments.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="109" selection-start="340" selection-end="348" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20141118213409_create_support_calendars.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20141118213409_create_support_calendars.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20141111171615_create_heroes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20141111171615_create_heroes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inflections.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,22 +176,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/unit/assignment_test.rb" />
-        <option value="$PROJECT_DIR$/test/fixtures/heros.yml" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20141111171615_create_heros.rb" />
         <option value="$PROJECT_DIR$/test/unit/hero_test.rb" />
-        <option value="$PROJECT_DIR$/test/fixtures/support_calendars.yml" />
-        <option value="$PROJECT_DIR$/test/unit/support_calendar_test.rb" />
-        <option value="$PROJECT_DIR$/app/models/support_calendar.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/initializers/inflections.rb" />
         <option value="$PROJECT_DIR$/app/clock.rb" />
-        <option value="$PROJECT_DIR$/app/models/hero.rb" />
-        <option value="$PROJECT_DIR$/app/models/assignment.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/assignments_controller.rb" />
-        <option value="dbtable:/3470d1fc/9d096549-aa1c-4261-b6ba-c6bf87576584/..heros" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/heros_controller.rb" />
+        <option value="dbtable:/3470d1fc/9d096549-aa1c-4261-b6ba-c6bf87576584/..heroes" />
+        <option value="$PROJECT_DIR$/db/migrate/20141111171615_create_heroes.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/assignments_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/assignment.rb" />
+        <option value="$PROJECT_DIR$/app/models/hero.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..assignments" />
+        <option value="dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..schema_migrations" />
+        <option value="$PROJECT_DIR$/test/unit/assignment_test.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/heroes_controller.rb" />
       </list>
     </option>
   </component>
@@ -235,6 +294,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixtures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -268,6 +367,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,6 +452,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -330,8 +483,8 @@
     <property name="Database.TableEditor.Splitter" value="0.8999999" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/script/rails" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -661,18 +814,18 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2120098" sideWeight="0.5825243" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23085222" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15625" sideWeight="0.8176915" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1807598" sideWeight="0.5825243" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41747573" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15196079" sideWeight="0.8176915" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4563107" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279396" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18230852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23193096" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -737,43 +890,35 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/hero.rb</url>
-          <line>11</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/assignments_controller.rb</url>
-          <line>45</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/heros_controller.rb</url>
-          <line>53</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="26" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="930" selection-end="960" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/assignment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="10" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/3470d1fc/9d096549-aa1c-4261-b6ba-c6bf87576584/..heros">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.51303154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/heros.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..schema_migrations">
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
@@ -783,93 +928,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.0.20/lib/action_controller/metal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="2919" selection-end="2919" vertical-scroll-proportion="0.0">
+    <entry file="dbDummy://dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..assignments">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.0.20/lib/active_record/base.rb">
+    <entry file="file://$PROJECT_DIR$/test/unit/helpers/assignments_helper_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="498" column="0" selection-start="24465" selection-end="24465" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/hero.rb">
+    <entry file="file://$PROJECT_DIR$/test/unit/helpers/heroes_helper_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.0.20/lib/active_support/notifications/instrumenter.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="558" selection-end="558" vertical-scroll-proportion="0.50489235">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.0.20/lib/action_controller/metal/implicit_render.rb">
+    <entry file="file://$PROJECT_DIR$/test/unit/hero_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="193" selection-end="193" vertical-scroll-proportion="0.43052837">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.0.20/lib/active_support/hash_with_indifferent_access.rb">
+    <entry file="file://$PROJECT_DIR$/test/fixtures/assignments.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.31702545">
+        <state line="3" column="6" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.0.20/lib/action_controller/metal/rescue.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20141111171615_create_heroes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/assignments_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20141111171629_create_assignments.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="62" selection-start="1524" selection-end="1558" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20141118213409_create_support_calendars.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="109" selection-start="340" selection-end="348" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.0.20/lib/action_dispatch/routing/polymorphic_routes.rb">
+    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="4726" selection-end="4759" vertical-scroll-proportion="0.80626225">
+        <state line="13" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.0.20/lib/action_dispatch/routing/url_for.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="0" selection-start="6173" selection-end="6173" vertical-scroll-proportion="0.48336595">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/heroes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/heros_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1515" selection-end="1515" vertical-scroll-proportion="2.2818005">
+        <state line="66" column="21" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.65673757">
           <folding />
         </state>
       </provider>

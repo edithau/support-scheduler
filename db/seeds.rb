@@ -31,5 +31,5 @@ end
 
 Assignment.all.each do |assignment|
   puts assignment.hero.name
-  puts assignment.sdate
+  puts assignment.date
 end

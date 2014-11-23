@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-
   def generate_response(resp_body, options={}, code)
     resp = {}
     resp["code"] = code

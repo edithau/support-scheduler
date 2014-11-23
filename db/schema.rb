@@ -15,13 +15,15 @@ ActiveRecord::Schema.define(:version => 20141118213409) do
 
   create_table "assignments", :force => true do |t|
     t.integer "hero_id"
-    t.date    "sdate"
+    t.date    "date"
   end
 
-  create_table "heros", :force => true do |t|
-    t.string "name"
+  create_table "heroes", :force => true do |t|
+    t.string "name",          :limit => 30, :null => false
     t.date   "undoable_date"
   end
+
+  add_index "heroes", ["name"], :name => "index_heroes_on_name", :unique => true
 
   create_table "support_calendars", :force => true do |t|
     t.datetime "created_at"

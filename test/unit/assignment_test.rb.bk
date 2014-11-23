@@ -4,8 +4,8 @@ require 'date'
 class AssignmentTest < ActiveSupport::TestCase
 
     def setup
-      @hero = heros(:Sherry)
-      @assignment = @hero.assignments.build(sdate: Date.today)
+      @hero = heroes(:Sherry)
+      @assignment = @hero.assignments.build(date: Date.today)
     end
 
     test "should be valid" do
@@ -18,7 +18,7 @@ class AssignmentTest < ActiveSupport::TestCase
     end
 
     test "assignment date should be present" do
-      @assignment.sdate = nil
+      @assignment.date = nil
       assert @assignment.invalid?
     end
 
@@ -27,8 +27,8 @@ class AssignmentTest < ActiveSupport::TestCase
     end
 
     test "should have unique assignment date" do
-      dup_date = Assignment.first.sdate
-      dup_assignment = Assignment.new(hero: @hero, sdate: dup_date)
+      dup_date = Assignment.first.date
+      dup_assignment = Assignment.new(hero: @hero, date: dup_date)
       assert dup_assignment.invalid?
     end
 

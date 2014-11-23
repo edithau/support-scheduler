@@ -1,22 +1,26 @@
+# An assignment is a scheduled on-duty date of a hero (resource)
+# Each assignment belongs to one hero and only one unique assignment per day
+# A cron job runs at mid-night everyday to remove out-of-date assignments.
+# An assignment can only be replaced (undoable) but not removed (except out-of-date)
 class Assignment < ActiveRecord::Base
   belongs_to :hero
-  default_scope order:  'sdate'
+  default_scope order:  'date'
   validates :hero_id, presence: true
-  validates :sdate, presence: true
-  validates_uniqueness_of :sdate
+  validates :date, presence: true
+  validates_uniqueness_of :date
   ActiveRecord::Base.include_root_in_json = false
 
 
-  # create a new assignment for the next available on-duty date
+  # create a new assignment for the next available on-duty date.  An on-duty date is a weekday and not a california holiday
   def self.createAssignment(hero_id)
     if Hero.exists?(hero_id)
       if (Assignment.count > 0)
-        last_sdate = Assignment.last.sdate
+        last_date = Assignment.last.date
       else
-        last_sdate = Date.today
+        last_date = Date.today
       end
-      sdate = SupportCalendar.get_next_on_duty_date(last_sdate)
-      self.create(hero_id: hero_id, sdate: sdate)
+      date = SupportCalendar.get_next_on_duty_date(last_date)
+      self.create(hero_id: hero_id, date: date)
     else
       raise ArgumentError.new('Hero id ' + hero_id + ' does not exist.')
     end
@@ -47,13 +51,26 @@ class Assignment < ActiveRecord::Base
 
   end
 
+  # today or upcoming assignment
+  def self.today
+    Assignment.first
+  end
+
+  # all assignments for the current month
+  def self.current_month
+    today = Date.today
+    last_day_of_the_month = Date.new(today.year, today.month, -1)
+    Assignment.where(date: today..last_day_of_the_month)
+  end
+
 
   # replace hero for this assignment
+  # replacement_id: replacement hero id
   def replace_hero(replacement_id)
     if Hero.exists?(replacement_id)
       hero = Hero.find(hero_id)
       if (!hero.undoable_date)
-        hero.undoable_date = sdate
+        hero.undoable_date = date
         hero.save
         self.hero_id = replacement_id
         self.save

@@ -1,9 +1,9 @@
 require 'json'
 
-class HerosController < ApplicationController
+class HeroesController < ApplicationController
   @@display_options = {:include => {:assignments => {:except => [:hero_id]}}}
 
-  # eg. curl http://localhost:3000/heros
+  # eg. curl http://localhost:3000/heroes
   def index
     begin
       result = Hero.all
@@ -14,8 +14,8 @@ class HerosController < ApplicationController
 
   end
 
-  # eg. curl http://localhost:3000/heros/1
-  def view
+  # eg. curl http://localhost:3000/heroes/1
+  def show
     begin
       result = Hero.find(params[:id])
       generate_response(result, @@display_options, 200)
@@ -26,7 +26,7 @@ class HerosController < ApplicationController
 
 
   # return all assignments for this hero
-  # eg. curl http://localhost:3000/heros/2/assignments
+  # eg. curl http://localhost:3000/heroes/2/assignments
   def assignments
     begin
       display_options = {:except =>[:hero_id], :include => {:hero => {:except => [:undoable_date]}}}
@@ -38,20 +38,34 @@ class HerosController < ApplicationController
   end
 
 
-  # eg. curl -X POST http://localhost:3000/heros -d "name=mary"
+  # eg. curl -X POST http://localhost:3000/heroes -d "name=mary"
   def create
     begin
       # XXX id missing -- caused error when generate response (undefined method hero_url)
-      # XXX names should be unique but not
-      result = Hero.create(name: params[:name])
-      generate_response(result, {}, 201)
-    rescue ArgumentError => e
+      hero = Hero.create(name: params[:name])
+      generate_response(hero, {}, 201)
+    rescue ActiveRecord::RecordNotUnique, ActiveRecord::StatementInvalid => e
       generate_exception_response(e.message, 422)
     end
   end
 
-  def hero_url(param)
-    s = 'huh?'
+  # eg. curl -X DELETE http://localhost:3000/heroes/5
+  def destroy
+    begin
+      Hero.destroy(params[:id].to_i)
+      generate_response({}, {}, 204)
+    rescue ActiveRecord::RecordNotFound => e
+      generate_exception_response(e.message, 404)
+    rescue ActiveRecord::DeleteRestrictionError  => e
+      generate_exception_response(e.message, 422)
+
+    end
+
   end
+
+  def url_for(hero)
+    "heroes/" + hero.id.to_s
+  end
+
 
 end

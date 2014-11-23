@@ -9,13 +9,11 @@ class AssignmentsController < ApplicationController
     def index
       begin
         if params[:time] == "today"
-          # display today's support hero
-          result = Assignment.first
+          # display today's assignment
+          result = Assignment.today
         elsif params[:time] == "month"
-          # display full schedule for all heros in the current month
-          today = Date.today
-          last_day_of_the_month = Date.new(today.year, today.month, -1)
-          result = Assignment.where(sdate: today..last_day_of_the_month)
+          # display assignments for all heroes in the current month
+          result = Assignment.current_month
         else
           result = Assignment.all
         end
@@ -27,7 +25,7 @@ class AssignmentsController < ApplicationController
     end
 
     # eg. curl http://localhost:3000/assignments/1
-    def view
+    def show
       begin
         result = Assignment.find(params[:id])
         generate_response(result, @@display_options, 200)
@@ -54,11 +52,12 @@ class AssignmentsController < ApplicationController
 
 
     # this method supports:
-    # 1. swap assignments between 2 heros
+    # 1. swap assignments
     # eg. curl -X POST http://localhost:3000/assignments/19 -d "swap_assignment_id=16"
 
-    # 2. replace hero for an assignment -- the assignment date will be marked as undoable on the replaced hero record.
-    #               each hero can have upto 1 undoable
+    # 2. replace hero for an assignment --
+    #   the assignment date will be marked as undoable on the replaced hero record.
+    #   Each hero can have upto 1 undoable
     # eg. curl -X POST http://localhost:3000/assignments/17 -d "replacement_hero_id=3"
     def update
       begin
