@@ -41,5 +41,7 @@ module Nr3
 
     # silence "I18n.enforce_available_locales" deprecation warnings
     config.i18n.enforce_available_locales = false
+
+    #config.action_controller.relative_url_root = "/schedule-api"
   end
 end

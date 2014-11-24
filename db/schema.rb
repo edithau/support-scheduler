@@ -14,20 +14,22 @@
 ActiveRecord::Schema.define(:version => 20141118213409) do
 
   create_table "assignments", :force => true do |t|
-    t.integer "hero_id"
+    t.integer "user_id"
     t.date    "date"
   end
 
-  create_table "heroes", :force => true do |t|
-    t.string "name",          :limit => 30, :null => false
-    t.date   "undoable_date"
-  end
-
-  add_index "heroes", ["name"], :name => "index_heroes_on_name", :unique => true
+  add_index "assignments", ["date"], :name => "index_assignments_on_date", :unique => true
 
   create_table "support_calendars", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "users", :force => true do |t|
+    t.string "name",          :limit => 30, :null => false
+    t.date   "undoable_date"
+  end
+
+  add_index "users", ["name"], :name => "index_users_on_name", :unique => true
 
 end

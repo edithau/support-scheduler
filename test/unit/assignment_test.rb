@@ -4,16 +4,16 @@ require 'date'
 class AssignmentTest < ActiveSupport::TestCase
 
     def setup
-      @hero = heroes(:Sherry)
-      @assignment = @hero.assignments.build(date: Date.today)
+      @user = users(:Sherry)
+      @assignment = @user.assignments.build(date: Date.today)
     end
 
     test "should be valid" do
       assert @assignment.valid?
     end
 
-    test "hero id should be present" do
-      @assignment.hero_id = nil
+    test "user id should be present" do
+      @assignment.user_id = nil
       assert @assignment.invalid?
     end
 
@@ -28,8 +28,15 @@ class AssignmentTest < ActiveSupport::TestCase
 
     test "should have unique assignment date" do
       dup_date = Assignment.first.date
-      dup_assignment = Assignment.new(hero: @hero, date: dup_date)
-      assert dup_assignment.invalid?
+      assert_raises(ActiveRecord::RecordNotUnique) {Assignment.create(user: @user, date: dup_date)}
     end
+
+    # cannot test this as functional since "current" month is a moving date
+    test "should get one month assignments" do
+      target_date = Assignment.first.date
+      target_assignments = Assignment.get_month(target_date)
+      assert_equal target_assignments.count, 2  # check yml file
+    end
+
 
 end

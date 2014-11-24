@@ -21,15 +21,15 @@ names2 = ["Sherry", "Boris", "Vicente", "Matte", "Jack", "Sherry",
 
 
 Assignment.destroy_all
-Hero.destroy_all
+User.destroy_all
 
 names.each do |name|
-  hero = Hero.create(name: name)
-  Assignment.createAssignment(hero.id)
+  user = User.create(name: name)
+  Assignment.createAssignment(user.id)
 end
 
 
 Assignment.all.each do |assignment|
-  puts assignment.hero.name
+  puts assignment.user.name
   puts assignment.date
 end

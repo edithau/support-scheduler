@@ -1,85 +1,87 @@
-# An assignment is a scheduled on-duty date of a hero (resource)
-# Each assignment belongs to one hero and only one unique assignment per day
+# An assignment is a scheduled on-duty date of a user.
+# Each assignment belongs to one user and only one unique assignment per day
 # A cron job runs at mid-night everyday to remove out-of-date assignments. (see clock.rb)
 # An assignment can only be replaced (undoable) but not removed (except out-of-date)
 class Assignment < ActiveRecord::Base
-  belongs_to :hero
+  belongs_to :user
   default_scope order:  'date'
-  validates :hero_id, presence: true
+  validates :user_id, presence: true
   validates :date, presence: true
-  validates_uniqueness_of :date
   ActiveRecord::Base.include_root_in_json = false
 
 
   # create a new assignment for the next available on-duty date.  An on-duty date is a weekday and not a california holiday
-  def self.createAssignment(hero_id)
-    if Hero.exists?(hero_id)
+  def self.createAssignment(user_id)
+    if User.exists?(user_id)
       if (Assignment.count > 0)
         last_date = Assignment.last.date
       else
-        last_date = Date.today
+        last_date = Date.today - 1
       end
       date = SupportCalendar.get_next_on_duty_date(last_date)
-      self.create(hero_id: hero_id, date: date)
+      self.create(user_id: user_id, date: date)
     else
-      raise ArgumentError.new('Hero id ' + hero_id + ' does not exist.')
+      raise ArgumentError.new('User id ' + user_id + ' does not exist.')
     end
 
   end
 
-  # swap assignments
-  def self.swap(id1, id2)
-    begin
-      assignment1 = Assignment.find(id1)
-      assignment2 = Assignment.find(id2)
 
-      tmp = assignment1.hero_id
-      assignment1.hero_id = assignment2.hero_id
-      assignment2.hero_id = tmp
-      Assignment.transaction do
-        assignment1.save
-        assignment2.save
-      end
-    ensure
-      if assignment1
-        assignment1.reload
-      end
-      if assignment2
-        assignment2.reload
-      end
-    end
-
-  end
-
-  # today or upcoming assignment
+  # today or first upcoming assignment
   def self.today
     Assignment.first
   end
 
-  # all assignments for the current month
-  def self.current_month
-    today = Date.today
-    last_day_of_the_month = Date.new(today.year, today.month, -1)
-    Assignment.where(date: today..last_day_of_the_month)
+  # all assignments for the target month
+  def self.get_month(target_date)
+    first_day_of_the_month = Date.new(target_date.year, target_date.month, 1)
+    last_day_of_the_month = Date.new(target_date.year, target_date.month, -1)
+    Assignment.where(date: first_day_of_the_month..last_day_of_the_month)
   end
 
 
-  # replace hero for this assignment
-  # replacement_id: replacement hero id
-  def replace_hero(replacement_id)
-    if Hero.exists?(replacement_id)
-      hero = Hero.find(hero_id)
-      if (!hero.undoable_date)
-        hero.undoable_date = date
-        hero.save
-        self.hero_id = replacement_id
-        self.save
-        self.reload
-      else
-        raise ArgumentError.new('Hero id ' + replacement_id.to_s + ' already has an undoable date on ' + hero.undoable_date.to_s)
-      end
-    else
-      raise ArgumentError.new('Hero id ' + replacement_id.to_s + ' does not exist.')
+  # replace user for this assignment
+  # replacement_id: replacement user id
+  def replace_user(replacement_id)
+    if !User.exists?(replacement_id)
+      raise ArgumentError.new('User id ' + replacement_id.to_s + ' does not exist.')
     end
+
+    if (user_id == replacement_id)
+      raise ArgumentError.new('Cannot replace assignment with the same user.')
+    end
+
+    user = User.find(user_id)
+    if (user.undoable_date)
+      raise ArgumentError.new('User id ' + replacement_id.to_s + ' already has an undoable date on ' + user.undoable_date.to_s)
+    end
+    Assignment.transaction do
+      user.undoable_date = date
+      user.save!
+      self.user_id = replacement_id
+      self.save!
+    end
+  end
+
+  # swap users with target assignment
+  def swap_user(target_assignment_id)
+
+    target = Assignment.find(target_assignment_id)
+    if (!target)
+      raise ArgumentError.new('Assignment ' + target_assignment_id + ' does not exist.')
+    end
+
+    if (user_id == target.user_id)
+      raise ArgumentError.new('Cannot swap assignment with the same user.')
+    end
+
+    tmp = target.user_id
+    Assignment.transaction do
+      target.user_id = self.user_id
+      target.save!
+      self.user_id = tmp
+      self.save!
+    end
+
   end
 end

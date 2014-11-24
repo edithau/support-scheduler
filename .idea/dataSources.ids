@@ -14,16 +14,9 @@
     <schema name="" catalog=""/>
     <table name="assignments" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4"/>
-      <column name="hero_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4"/>
+      <column name="user_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4"/>
       <column name="date" sqlType="DATE" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
       <primary-key columns="id"/>
-    </table>
-    <table name="heroes" schema="" catalog="" type="TABLE">
-      <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
-      <column name="undoable_date" sqlType="DATE" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
-      <primary-key columns="id"/>
-      <index name="index_heroes_on_name" unique="true" columns="name"/>
     </table>
     <table name="schema_migrations" schema="" catalog="" type="TABLE">
       <column name="version" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
@@ -33,11 +26,12 @@
       <column name="name" sqlType="" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
       <column name="seq" sqlType="" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
     </table>
-    <table name="support_calendars" schema="" catalog="" type="TABLE">
+    <table name="users" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4"/>
-      <column name="created_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
-      <column name="updated_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR(30)" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
+      <column name="undoable_date" sqlType="DATE" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
       <primary-key columns="id"/>
+      <index name="index_users_on_name" unique="true" columns="name"/>
     </table>
   </data-source>
   <data-source source="LOCAL" name="Rails nr3: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="1e9871fc-90a6-4060-9128-2f05627b32e1">
@@ -54,16 +48,10 @@
     <schema name="" catalog=""/>
     <table name="assignments" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4"/>
-      <column name="hero_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4"/>
+      <column name="user_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4"/>
       <column name="date" sqlType="DATE" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
       <primary-key columns="id"/>
-    </table>
-    <table name="heroes" schema="" catalog="" type="TABLE">
-      <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
-      <column name="undoable_date" sqlType="DATE" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
-      <primary-key columns="id"/>
-      <index name="index_heroes_on_name" unique="true" columns="name"/>
+      <index name="index_assignments_on_date" unique="true" columns="date"/>
     </table>
     <table name="schema_migrations" schema="" catalog="" type="TABLE">
       <column name="version" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
@@ -78,6 +66,13 @@
       <column name="created_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
       <column name="updated_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
       <primary-key columns="id"/>
+    </table>
+    <table name="users" schema="" catalog="" type="TABLE">
+      <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR(30)" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
+      <column name="undoable_date" sqlType="DATE" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="id"/>
+      <index name="index_users_on_name" unique="true" columns="name"/>
     </table>
   </data-source>
 </component>
