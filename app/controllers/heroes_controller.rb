@@ -25,12 +25,14 @@ class HeroesController < ApplicationController
   end
 
 
-  # return all assignments for this hero
+  # return all assignments of this hero
   # eg. curl http://localhost:3000/heroes/2/assignments
   def assignments
     begin
       display_options = {:except =>[:hero_id], :include => {:hero => {:except => [:undoable_date]}}}
-      result = Hero.find(params[:id]).assignments
+      #result = Hero.find(params[:id]).assignments
+      hero = Hero.find(params[:id])
+      result = hero.get_assignments
       generate_response(result, display_options, 200)
     rescue ActiveRecord::RecordNotFound => e
       generate_exception_response(e.message, 404)
@@ -41,7 +43,6 @@ class HeroesController < ApplicationController
   # eg. curl -X POST http://localhost:3000/heroes -d "name=mary"
   def create
     begin
-      # XXX id missing -- caused error when generate response (undefined method hero_url)
       hero = Hero.create(name: params[:name])
       generate_response(hero, {}, 201)
     rescue ActiveRecord::RecordNotUnique, ActiveRecord::StatementInvalid => e
@@ -52,7 +53,7 @@ class HeroesController < ApplicationController
   # eg. curl -X DELETE http://localhost:3000/heroes/5
   def destroy
     begin
-      Hero.destroy(params[:id].to_i)
+      Hero.destroy(params[:id])
       generate_response({}, {}, 204)
     rescue ActiveRecord::RecordNotFound => e
       generate_exception_response(e.message, 404)
@@ -63,9 +64,16 @@ class HeroesController < ApplicationController
 
   end
 
-  def url_for(hero)
-    "heroes/" + hero.id.to_s
-  end
+  #def url_for2(hero)
+  #  begin
+  #    'heroes/' + hero.id.to_s
+  #  rescue NoMethodError => e
+  #    super(hero)
+  #  end
+  #end
 
+  def url_for(hero)
+      'heroes/' + hero.id.to_s
+  end
 
 end

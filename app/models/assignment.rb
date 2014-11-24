@@ -1,6 +1,6 @@
 # An assignment is a scheduled on-duty date of a hero (resource)
 # Each assignment belongs to one hero and only one unique assignment per day
-# A cron job runs at mid-night everyday to remove out-of-date assignments.
+# A cron job runs at mid-night everyday to remove out-of-date assignments. (see clock.rb)
 # An assignment can only be replaced (undoable) but not removed (except out-of-date)
 class Assignment < ActiveRecord::Base
   belongs_to :hero

@@ -38,5 +38,8 @@ module Nr3
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # silence "I18n.enforce_available_locales" deprecation warnings
+    config.i18n.enforce_available_locales = false
   end
 end

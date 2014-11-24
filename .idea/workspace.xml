@@ -10,31 +10,31 @@
     <file path="/Dummy.txt" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416781989918" ignored="false" />
     <file path="/scheduler.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416244379514" ignored="false" />
     <file path="/schedule.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1415997620247" ignored="false" />
-    <file path="/hero.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783534688" ignored="false" />
+    <file path="/hero.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416792662718" ignored="false" />
     <file path="/seeds.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416449596923" ignored="false" />
-    <file path="/fragment.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416510290245" ignored="false" />
-    <file path="/a.dummy" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416784286718" ignored="false" />
+    <file path="/fragment.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416798620065" ignored="false" />
+    <file path="/a.dummy" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416840287389" ignored="false" />
     <file path="/temp.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416706524155" ignored="false" />
     <file path="/20141111171629_create_schedules.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416187833155" ignored="false" />
     <file path="/schema.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416706951878" ignored="false" />
-    <file path="/assignments_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783256679" ignored="false" />
-    <file path="/assignment.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783401562" ignored="false" />
+    <file path="/assignments_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416790522989" ignored="false" />
+    <file path="/assignment.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416791796204" ignored="false" />
     <file path="/20141111171629_create_assignments.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416243618854" ignored="false" />
     <file path="/assignment_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416784144279" ignored="false" />
     <file path="/heros.yml" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416349808299" ignored="false" />
     <file path="/assignments.yml" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416348788758" ignored="false" />
-    <file path="/clock.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416598507595" ignored="false" />
+    <file path="/clock.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416792360031" ignored="false" />
     <file path="/support_calendar.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416347680188" ignored="false" />
     <file path="/support_calendars.yml" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416346808563" ignored="false" />
     <file path="/support_calendar_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416350415212" ignored="false" />
     <file path="/heros_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416690899070" ignored="false" />
     <file path="/20141118213409_create_support_calendars.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416346467053" ignored="false" />
-    <file path="/hero_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416707007108" ignored="false" />
+    <file path="/hero_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416791702039" ignored="false" />
     <file path="/application_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783574951" ignored="false" />
     <file path="$PROJECT_DIR$/log/development.log" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783975557" ignored="false" />
     <file path="/Ruby Console" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416767071447" ignored="false" />
     <file path="/20141111171615_create_heros.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416706994669" ignored="false" />
-    <file path="/heroes_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416784556316" ignored="false" />
+    <file path="/heroes_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416811754758" ignored="false" />
     <file path="/20141111171615_create_heroes.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416713734700" ignored="false" />
     <file path="$PROJECT_DIR$/../testloc/app/controllers/heros_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416762212029" ignored="false" />
     <file path="$PROJECT_DIR$/../testloc/app/controllers/application_controller.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416768708202" ignored="false" />
@@ -48,6 +48,8 @@
     <file path="/user.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416764238298" ignored="false" />
     <file path="$PROJECT_DIR$/../testloc/Gemfile" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416768313676" ignored="false" />
     <file path="/a.sql" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416783916674" ignored="false" />
+    <file path="/application.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416789423550" ignored="false" />
+    <file path="/heroes_controller_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416812223530" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,91 +74,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hero_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/hero_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="heroes_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="heroes_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/heroes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="21" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.65673757">
+            <state line="71" column="3" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heros.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/fixtures/heros.yml">
+      <file leaf-file-name="assignments_controller_test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/functional/assignments_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assignments.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/fixtures/assignments.yml">
+      <file leaf-file-name="heroes_controller_test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/functional/heroes_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+            <state line="19" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20141111171629_create_assignments.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20141111171629_create_assignments.rb">
+      <file leaf-file-name="hero_test.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/unit/hero_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="5" column="27" selection-start="104" selection-end="104" vertical-scroll-proportion="0.15602838">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20141118213409_create_support_calendars.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20141118213409_create_support_calendars.rb">
+      <file leaf-file-name="assignments_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/assignments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="42" column="72" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+      <file leaf-file-name="assignment_test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/assignment_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+            <state line="7" column="61" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <file leaf-file-name="assignment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/assignment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="2" column="88" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20141111171615_create_heroes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20141111171615_create_heroes.rb">
+      <file leaf-file-name="hero.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/hero.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inflections.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="8" column="15" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,22 +160,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20141111171615_create_heros.rb" />
-        <option value="$PROJECT_DIR$/test/unit/hero_test.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/inflections.rb" />
-        <option value="$PROJECT_DIR$/app/clock.rb" />
-        <option value="dbtable:/3470d1fc/9d096549-aa1c-4261-b6ba-c6bf87576584/..heroes" />
-        <option value="$PROJECT_DIR$/db/migrate/20141111171615_create_heroes.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/assignments_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/assignment.rb" />
-        <option value="$PROJECT_DIR$/app/models/hero.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..assignments" />
         <option value="dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..schema_migrations" />
+        <option value="dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..support_calendars" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/test/unit/assignment_test.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/assignments_controller.rb" />
+        <option value="$PROJECT_DIR$/test/unit/hero_test.rb" />
+        <option value="$PROJECT_DIR$/app/models/assignment.rb" />
+        <option value="$PROJECT_DIR$/app/clock.rb" />
+        <option value="$PROJECT_DIR$/app/models/hero.rb" />
+        <option value="$PROJECT_DIR$/test/functional/assignments_controller_test.rb" />
+        <option value="dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..heroes" />
         <option value="$PROJECT_DIR$/app/controllers/heroes_controller.rb" />
+        <option value="$PROJECT_DIR$/test/functional/heroes_controller_test.rb" />
       </list>
     </option>
   </component>
@@ -320,89 +304,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="performance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functional" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nr3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fixtures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -435,24 +373,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nr3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -748,6 +668,10 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
     <configuration default="false" name="spec" type="RakeRunConfigurationType" factoryName="Rake">
@@ -890,99 +814,30 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/heroes_controller.rb</url>
+          <line>68</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="28" />
+      <option name="time" value="32" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.51303154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/heros.yml">
+    <entry file="file://$PROJECT_DIR$/test/unit/support_calendar_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..schema_migrations">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..assignments">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/helpers/assignments_helper_test.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/helpers/heroes_helper_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/hero_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/assignments.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20141111171615_create_heroes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20141111171629_create_assignments.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="41" column="67" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.7815603">
           <folding />
         </state>
       </provider>
@@ -994,23 +849,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/clock.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/assignment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="88" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/heroes.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/assignment_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="61" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3470d1fc/1e9871fc-90a6-4060-9128-2f05627b32e1/..heroes">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/hero.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="15" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/functional/heroes_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/functional/assignments_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/heroes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="21" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.65673757">
+        <state line="71" column="3" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/assignments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="72" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/hero_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="27" selection-start="104" selection-end="104" vertical-scroll-proportion="0.15602838">
           <folding />
         </state>
       </provider>

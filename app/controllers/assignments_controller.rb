@@ -40,7 +40,7 @@ class AssignmentsController < ApplicationController
     def create
       begin
         if (params[:hero_id])
-          assignment = Assignment.createAssignment(params[:hero_id])
+          assignment = Assignment.createAssignment(params[:hero_id].to_i)
           generate_response(assignment, @@display_options, 201)
         else
           raise ArgumentError.new("Invalid POST parameters.  Please provide hero_id to create an assignment.")
