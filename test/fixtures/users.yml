@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+Sherry:
+  id: 1
+  name: Sherry
+  undoable_date: nil
+
+Vincente:
+  id: 2
+  name: Vincente
+  undoable_date: nil
+
+

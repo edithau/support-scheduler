@@ -1,0 +1,9 @@
+class RenameHeroToUser < ActiveRecord::Migration
+  def self.up
+    rename_table :heroes, :users
+  end
+
+  def self.down
+    rename_table :users, :heroes
+  end
+end
