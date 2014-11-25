@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       else
         result = User.all
       end
-      generate_response(result, @@display_options, 200)
+      generate_response(result, {}, 200)
     rescue Exception => e
       # there should be no service related error generated from this request
       # throw an internal system error code
