@@ -21,7 +21,7 @@ class Assignment < ActiveRecord::Base
       date = SupportCalendar.get_next_on_duty_date(last_date)
       self.create(user_id: user_id, date: date)
     else
-      raise ArgumentError.new('User id ' + user_id + ' does not exist.')
+      raise ArgumentError.new('User id ' + user_id.to_s + ' does not exist.')
     end
 
   end
@@ -39,10 +39,34 @@ class Assignment < ActiveRecord::Base
     Assignment.where(date: first_day_of_the_month..last_day_of_the_month)
   end
 
+  # swap users between 2 assignments
+  def self.swap_user(id1, id2)
+
+    assignment1 = Assignment.find(id1)
+    assignment2 = Assignment.find(id2)
+
+    if (assignment1.user_id == assignment2.user_id)
+      raise ArgumentError.new("Cannot swap assignment with the same user.")
+    end
+
+    tmp = assignment1.user_id
+    assignment1.user_id = assignment2.user_id
+    assignment2.user_id = tmp
+    Assignment.transaction do
+      assignment1.save!
+      assignment2.save!
+    end
+
+  end
+
 
   # replace user for this assignment
   # replacement_id: replacement user id
   def replace_user(replacement_id)
+    if (self.user.undoable_date)
+      raise ArgumentError.new('User id ' + replacement_id.to_s + ' already has an undoable date on ' + user.undoable_date.to_s)
+    end
+
     if !User.exists?(replacement_id)
       raise ArgumentError.new('User id ' + replacement_id.to_s + ' does not exist.')
     end
@@ -51,37 +75,12 @@ class Assignment < ActiveRecord::Base
       raise ArgumentError.new('Cannot replace assignment with the same user.')
     end
 
-    user = User.find(user_id)
-    if (user.undoable_date)
-      raise ArgumentError.new('User id ' + replacement_id.to_s + ' already has an undoable date on ' + user.undoable_date.to_s)
-    end
+    replaced_user = self.user
     Assignment.transaction do
-      user.undoable_date = date
-      user.save!
+      replaced_user.undoable_date = date
+      replaced_user.save!
       self.user_id = replacement_id
       self.save!
     end
-  end
-
-  # swap users with target assignment
-  def swap_user(target_assignment_id)
-
-    target = Assignment.find(target_assignment_id)
-    if (!target)
-      raise ArgumentError.new('Assignment ' + target_assignment_id + ' does not exist.')
-    end
-
-    if (user_id == target.user_id)
-      raise ArgumentError.new('Cannot swap assignment with the same user.')
-    end
-
-    tmp = target.user_id
-    Assignment.transaction do
-      target.user_id = self.user_id
-      target.save!
-      self.user_id = tmp
-      self.save!
-    end
-
   end
 end

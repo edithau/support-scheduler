@@ -36,7 +36,7 @@ class AssignmentsController < ApplicationController
 
 
     # create a new assignment for the next available on-duty date
-    # eg. curl -X POST http://localhost:3000/assignments -d "user_id=2"
+    # eg. curl -i -X POST http://localhost:3000/assignments -d "user_id=2"
     def create
       begin
         if (params[:user_id])
@@ -50,37 +50,46 @@ class AssignmentsController < ApplicationController
       end
     end
 
-
-    # this method supports:
-    # 1. swap assignments
-    # eg. curl -X POST http://localhost:3000/assignments/19 -d "swap_assignment_id=16"
-
-    # 2. replace user for an assignment --
-    #   the assignment date will be marked as undoable on the replaced user record.
-    #   Each user can have upto 1 undoable
-    # eg. curl -X POST http://localhost:3000/assignments/17 -d "replacement_user_id=3"
-    def update
+    # swap user of 2 assignments
+    # eg. curl -i -X POST http://localhost:3000/assignments/swap_user/10/15 -d ''
+    # swap user of assignments 10 and 15
+    def swap_user
       begin
-        assignment = Assignment.find(params[:id])
-        if (params[:swap_assignment_id])
-          assignment.swap_user(params[:swap_assignment_id].to_i)
-         # Assignment.swap(assignment.id, params[:swap_assignment_id].to_i)
-        elsif (params[:replacement_user_id])
-          replacement_user_id = params[:replacement_user_id].to_i
-          if (assignment.user_id == replacement_user_id )
-            raise ArgumentError.new("Cannot replace one self")
-          else
-            assignment.replace_user(replacement_user_id)
-          end
-        else
-          raise ArgumentError.new("Invalid POST parameters.  To swap assignments, please provide swap_assignment_id. To replace assignment's user, please provide replacement_user_id.")
-        end
-        generate_response(assignment,@@display_options, 200)
+        id1 = params[:id1].to_i
+        id2 = params[:id2].to_i
+        Assignment.swap_user(id1, id2)
+        result = {}
+        result[:uri1] = assignments_url + '/' +  params[:id1]
+        result[:uri2] = assignments_url + '/' +  params[:id2]
+        generate_response(result,{}, 200)
       rescue ActiveRecord::RecordNotFound, ArgumentError => e
         generate_exception_response(e.message, 422)
-      rescue ActiveRecord::StatementInvalid=> e
+      rescue ActiveRecord::StatementInvalid, Exception => e
         generate_exception_response(e.message, 500)
       end
     end
+
+
+    # replace user for an assignment
+    # The assignment date will be marked as undoable on the replaced user record.
+    # Each user can have upto 1 undoable
+    # eg. curl -i -X POST http://localhost:3000/assignments/5/replace_user/10 -d ''
+    # replace assignment 5's user to user 10, record undoable date on the replaced user resource
+    def replace_user
+      begin
+        assignment = Assignment.find(params[:id])
+        replaced_user_id  = assignment.user_id
+        assignment.replace_user(params[:replacement_user_id])
+        result = {}
+        result[:uri] = assignments_url + '/' + params[:id]
+        result[:undoable_user_uri] = users_url + '/' + replaced_user_id.to_s
+        generate_response(result,{}, 200)
+      rescue ActiveRecord::RecordNotFound, ArgumentError => e
+        generate_exception_response(e.message, 422)
+      rescue ActiveRecord::StatementInvalid, Exception => e
+        generate_exception_response(e.message, 500)
+      end
+    end
+
   end
 

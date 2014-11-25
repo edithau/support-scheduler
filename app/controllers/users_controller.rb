@@ -43,7 +43,7 @@ class UsersController < ApplicationController
     end
   end
 
-  # eg. curl -X POST http://localhost:3000/users -d "name=mary"
+  # eg. curl -i -X POST http://localhost:3000/users -d "name=mary"
   def create
     begin
       user = User.create(name: params[:name])
@@ -53,7 +53,7 @@ class UsersController < ApplicationController
     end
   end
 
-  # eg. curl -X DELETE http://localhost:3000/users/5
+  # eg. curl -i -X DELETE http://localhost:3000/users/5
   def destroy
     begin
       User.destroy(params[:id])
@@ -69,7 +69,7 @@ class UsersController < ApplicationController
 
 
   def url_for(user)
-      'Users/' + user.id.to_s
+      'users/' + user.id.to_s
   end
 
 end

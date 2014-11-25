@@ -9,9 +9,9 @@
 require 'date'
 require 'holidays'
 
-names = ['Sherry', 'Boris', 'Vicente']
+#names = ['Sherry', 'Boris', 'Vicente']
 
-names2 = ["Sherry", "Boris", "Vicente", "Matte", "Jack", "Sherry",
+names = ["Sherry", "Boris", "Vicente", "Matte", "Jack", "Sherry",
           "Matte", "Kevin", "Kevin", "Vicente", "Zoe", "Kevin",
           "Matte", "Zoe", "Jay", "Boris", "Eadon", "Sherry",
           "Franky", "Sherry", "Matte", "Franky", "Franky", "Kevin",
@@ -24,7 +24,7 @@ Assignment.destroy_all
 User.destroy_all
 
 names.each do |name|
-  user = User.create(name: name)
+  user = User.find_or_create_by_name(name)
   Assignment.createAssignment(user.id)
 end
 
