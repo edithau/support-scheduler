@@ -49,12 +49,19 @@ class Assignment < ActiveRecord::Base
       raise ArgumentError.new("Cannot swap assignment with the same user.")
     end
 
-    tmp = assignment1.user_id
-    assignment1.user_id = assignment2.user_id
-    assignment2.user_id = tmp
-    Assignment.transaction do
-      assignment1.save!
-      assignment2.save!
+    tmp1 = assignment1.user_id
+    tmp2 = assignment2.user_id
+    begin
+      assignment1.user_id = assignment2.user_id
+      assignment2.user_id = tmp1
+      Assignment.transaction do
+        assignment1.save!
+        assignment2.save!
+      end
+    rescue ActiveRecord::Rollback => e
+      assignment1.user_id = tmp1
+      assignment2.user_id = tmp2
+      raise e
     end
 
   end
@@ -76,11 +83,19 @@ class Assignment < ActiveRecord::Base
     end
 
     replaced_user = self.user
-    Assignment.transaction do
-      replaced_user.undoable_date = date
-      replaced_user.save!
-      self.user_id = replacement_id
-      self.save!
+    tmp_undoable_date = replaced_user.undoable_date
+    tmp_self_user_id = self.user_id
+    begin
+      Assignment.transaction do
+        replaced_user.undoable_date = date
+        replaced_user.save!
+        self.user_id = replacement_id
+        self.save!
+      end
+    rescue ActiveRecord::Rollback => e
+      replaced_user.undoable_date = tmp_undoable_date
+      self.user_id = tmp_self_user_id
+      raise e
     end
   end
 end

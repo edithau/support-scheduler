@@ -18,8 +18,10 @@ class AssignmentsController < ApplicationController
           result = Assignment.all
         end
         generate_response(result, @@display_options, 200)
-      rescue ArgumentError => e
-        generate_exception_response(e.message, 422)
+      rescue Exception => e
+        # there should be no service related error generated from this request
+        # throw an internal system error code
+        generate_exception_response(e.message, 500)
       end
 
     end
@@ -31,6 +33,8 @@ class AssignmentsController < ApplicationController
         generate_response(result, @@display_options, 200)
       rescue ActiveRecord::RecordNotFound => e
         generate_exception_response(e.message, 404)
+      rescue Exception => e
+        generate_exception_response(e.message, 500)
       end
     end
 
@@ -47,6 +51,8 @@ class AssignmentsController < ApplicationController
         end
       rescue ArgumentError => e
         generate_exception_response(e.message, 422)
+      rescue Exception => e
+        generate_exception_response(e.message, 500)
       end
     end
 
