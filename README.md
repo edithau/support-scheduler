@@ -25,7 +25,7 @@ Here are the endpoints and examples
 
 To display today's hero.  If today is an off-duty day (holiday or weekend), return the immediate next support day's hero
 <pre><code>
-    curl http://localhost:3000/schedules?time=today
+    curl http://localhost:3000/assignments?time=today
 
     {
       "code": 200,
@@ -42,7 +42,7 @@ To display today's hero.  If today is an off-duty day (holiday or weekend), retu
 
 
 
-To return a single user's scheduled dates
+To return a single user's assignments dates
 <pre><code>
     curl http://localhost:3000/users/1
 
@@ -94,7 +94,7 @@ Create a new assignment
     }
 </pre></code>
 
-To mark undoable on a user's schedule
+To replace a user's assignment and mark undoable on the replaced user
 <pre><code>
 curl -i  -X POST http://localhost:3000/assignments/3/replace_user/11 -d ''
 
@@ -110,7 +110,7 @@ Content-Type: application/json; charset=utf-8
 </pre></code>
 
 
-To swap schedule with another hero
+To swap assignment with another user
 <pre><code>
     curl -i  -X POST http://localhost:3000/assignments/swap_user/21/30 -d ''
 

@@ -57,7 +57,7 @@
     <file path="/users_controller_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416849046409" ignored="false" />
     <file path="/users.yml" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416847369862" ignored="false" />
     <file path="/assignments_controller_test.rb" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416876893629" ignored="false" />
-    <file path="/README.md" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416939252377" ignored="false" />
+    <file path="/README.md" changelist="4e8c329d-92ff-4e2b-b6c3-bb604e5ef1f8" time="1416939686100" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,19 +82,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="assignments_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/assignments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="28" selection-start="3167" selection-end="3167" vertical-scroll-proportion="0.7726751">
+            <state line="35" column="0" selection-start="1207" selection-end="1286" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assignments_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/assignments_controller.rb">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1207" selection-end="1286" vertical-scroll-proportion="0.0">
+            <state line="96" column="30" selection-start="2197" selection-end="2197" vertical-scroll-proportion="-0.23765786">
               <folding />
             </state>
           </provider>
@@ -929,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/assignments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1207" selection-end="1286" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="34" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
@@ -943,9 +936,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/assignments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1207" selection-end="1286" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="28" selection-start="3167" selection-end="3167" vertical-scroll-proportion="0.7726751">
+        <state line="96" column="30" selection-start="2197" selection-end="2197" vertical-scroll-proportion="-0.23765786">
           <folding />
         </state>
       </provider>
