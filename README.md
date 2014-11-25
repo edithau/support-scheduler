@@ -25,73 +25,71 @@ Here are the endpoints and examples
 
 To display today's hero.  If today is an off-duty day (holiday or weekend), return the immediate next support day's hero
 <pre><code>
-    curl http://localhost:3000/assignments?time=today
+curl http://localhost:3000/assignments?time=today
 
-    {
-      "code": 200,
-      "result": {
-        "date": "2014-11-25",
-        "id": 1,
-        "user": {
-          "id": 1,
-          "name": "Sherry "
-        }
-      }
+{
+  "code": 200,
+  "result": {
+    "date": "2014-11-25",
+    "id": 1,
+    "user": {
+      "id": 1,
+      "name": "Sherry "
     }
+  }
+}
 </pre></code>
-
-
 
 To return a single user's assignments dates
 <pre><code>
-    curl http://localhost:3000/users/1
+curl http://localhost:3000/users/1
 
-    {
-      "code": 200,
-      "result": {
-        "id": 1,
-        "name": "Sherry ",
-        "undoable_date": null,
-        "assignments": [
-          {
-            "date": "2014-11-25",
-            "id": 1
-          },
-          {
-            "date": "2014-12-23",
-            "id": 20
-          },
-          {
-            "date": "2015-01-20",
-            "id": 37
-          },
-          {
-            "date": "2015-01-22",
-            "id": 39
-          }
-        ]
+{
+  "code": 200,
+  "result": {
+    "id": 1,
+    "name": "Sherry ",
+    "undoable_date": null,
+    "assignments": [
+      {
+        "date": "2014-11-25",
+        "id": 1
+      },
+      {
+        "date": "2014-12-23",
+        "id": 20
+      },
+      {
+        "date": "2015-01-20",
+        "id": 37
+      },
+      {
+        "date": "2015-01-22",
+        "id": 39
       }
-    }
+    ]
+  }
+}
 </pre></code>
 
 Create a new assignment
 <pre><code>
-    curl -i -X POST http://localhost:3000/assignments -d "user_id=10"
+curl -i -X POST http://localhost:3000/assignments -d "user_id=10"
 
-    HTTP/1.1 201 Created
-    Location: http://localhost:3000/assignments/41
-    Content-Type: application/json; charset=utf-8
-    {
-      "code": 201,
-      "result": {
-        "date": "2015-01-26",
-        "id": 41,
-        "user": {
-          "id": 10,
-          "name": "Jay "
-        }
-      }
+HTTP/1.1 201 Created
+Location: http://localhost:3000/assignments/41
+Content-Type: application/json; charset=utf-8
+{
+  "code": 201,
+  "result": {
+    "date": "2015-01-26",
+    "id": 41,
+    "user": {
+      "id": 10,
+      "name": "Jay "
     }
+  }
+}
 </pre></code>
 
 To replace a user's assignment and mark undoable on the replaced user
@@ -109,20 +107,19 @@ Content-Type: application/json; charset=utf-8
 }
 </pre></code>
 
-
 To swap assignment with another user
 <pre><code>
-    curl -i  -X POST http://localhost:3000/assignments/swap_user/21/30 -d ''
+curl -i  -X POST http://localhost:3000/assignments/swap_user/21/30 -d ''
 
-    HTTP/1.1 200 OK
-    Content-Type: application/json; charset=utf-8
-    {
-      "code": 200,
-      "result": {
-        "uri1": "http://localhost:3000/assignments/21",
-        "uri2": "http://localhost:3000/assignments/30"
-      }
-    }
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+{
+  "code": 200,
+  "result": {
+    "uri1": "http://localhost:3000/assignments/21",
+    "uri2": "http://localhost:3000/assignments/30"
+  }
+}
 </pre></code>
 
 <h2>How to start the service</h2>
