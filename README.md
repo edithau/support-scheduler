@@ -123,14 +123,4 @@ Content-Type: application/json; charset=utf-8
 </pre></code>
 
 <h2>How to start the service</h2>
-Here are the steps to run the service on a local machine.
-
-1. clone this repo;
-
-2. edit environment configuration settings;
-
-3. create, migrate, and seed the database; (the starting user line up is at db/names.txt)
-
-4. start the cron job daemon (to purge out-dated scheduling assignments daily) from the project root directory,  `clockworkd -c app/clock.rb start --log`
-
-5. start your rails server
+Please see the wiki deployment section
