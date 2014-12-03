@@ -1,6 +1,6 @@
 <h2>Online Support Team Scheduler</h2>
 
-This scheduler is implemented as a REST API, using RoR and Redis.  See below for my design and implementation note.
+This is an online scheduling service for a support team. It is implemented as a REST-like JSON API using Ruby on Rails.
 
 Features include:
 
@@ -19,8 +19,7 @@ Features include:
 ● Users should be able to swap duty with another user’s specific day
 
 <h2>How to use the service</h2>
-Please see wiki usage section for the entire API. Here are some examples
-Here are the endpoints and examples
+Please see wiki usage section for the entire API.   Here are some examples
 
 
 To display today's hero.  If today is an off-duty day (holiday or weekend), return the immediate next support day's hero
